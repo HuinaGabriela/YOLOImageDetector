@@ -86,6 +86,11 @@ Suporte a ajustes de confiança, tamanho da imagem, entre outros.
 
 
 
+![Detecção do modelo](000000000073.jpg)
+
+*Legenda: Imagem detectada e rotulada corretamente pelo modelo YOLOv5.*
+
+
 
 
 
