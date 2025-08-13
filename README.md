@@ -53,7 +53,14 @@ Suporte a ajustes de confiança, tamanho da imagem, entre outros.
    ```bash
    python train.py --img 640 --batch 16 --epochs 50 --data data/custom.yaml --weights yolov5s.pt --name custom_yolo
 
-3. Visualizar Resultados
+3. Realizar inferência  
+   Detectar objetos em uma imagem ou pasta de imagens
+   ```bash
+   python detect.py --weights runs/train/custom_yolo/weights/best.pt --img 640 --conf 0.25 --source path/para/sua/imagem.jpg --save-txt --save-conf
+
+
+
+5. Visualizar Resultados
    As imagens com as detecções e os arquivos TXT com as informações serão salvos em runs/detect/exp.
 
 
