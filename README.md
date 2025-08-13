@@ -42,22 +42,20 @@ Suporte a ajustes de confiança, tamanho da imagem, entre outros.
 - OpenCV (manipulação e processamento de imagens)  
 
 
-
 🚀 Como Usar
-Treinar o modelo
 
-1. Preparar o dataset
+**Treinar o modelo**
+
+1. Preparar o dataset  
    Organize suas imagens e anotações no formato YOLO (bounding boxes com classes).
 
-2. Treinar o modelo
+2. Treinar o modelo  
+   ```bash
    python train.py --img 640 --batch 16 --epochs 50 --data data/custom.yaml --weights yolov5s.pt --name custom_yolo
 
-3. Realizar Inferência
-   Detectar objetos em uma imagem ou pasta de imagens:
-   python detect.py --weights runs/train/custom_yolo/weights/best.pt --img 640 --conf 0.25 --source path/para/sua/imagem.jpg --save-txt --save-conf
-
-4. Visualizar Resultados
+3. Visualizar Resultados
    As imagens com as detecções e os arquivos TXT com as informações serão salvos em runs/detect/exp.
+
 
 ### 📊 Desempenho do Modelo (YOLOv5)
 
